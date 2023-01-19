@@ -9,7 +9,8 @@ module.exports = {
 
     dropShadow: {
         dark: '1px 1px 1px gray',
-        dark1:'3px 3px 3px gray',
+        dark1:'1px 1px 1px black',
+        dark2:'1px 1px 1px black',
       }
 },
   },

@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Logo from '../../public/Logo_Final.png'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
+import Nav from 'components/Nav'
+import Carrossel from 'components/Carrossel'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,46 +22,24 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-between p-5 bg-gradient-to-t from-slate-100 to-slate-400 drop-shadow-dark1">
-            <div className="border-b border-solid border-slate-400 w-1/4 mx-20 mt-10 text-slate-700">
+          <div className="flex flex-row justify-center lg:justify-between p-5 bg-gradient-to-t from-slate-100 to-slate-400 drop-shadow-dark1">
+            <div className="hidden lg:block border-b border-solid border-slate-400 w-1/4 mx-20 mt-10 text-slate-700">
               <p>Informações de teste </p>
               <p>Av Damião Junqueira de Souza</p>
             </div>
-            <Image src={Logo} autl="logo da empresa"
-              className="w-80 drop-shadow-dark"
-            />
-            <div className=" text-end border-b border-solid border-slate-400 w-1/4 pb-1 mx-20 mt-10  text-slate-700">
+            <div>
+              <Image src={Logo} alt="logo da empresa"
+                className="w-80 drop-shadow-dark "
+              />
+            </div>
+            <div className=" hidden lg:block text-end border-b border-solid border-slate-400 w-1/4 pb-1 mx-20 mt-10  text-slate-700">
               <p>35 988454245</p>
               <p>Localidade</p>
             </div>
           </div>
-          <nav className="itens-center justify-center bg-slate-500 text-white p-2  ">
-            <ul className="flex justify-center items-center font-bold gap-10">
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-              <li>
-                <p>Menu</p>
-              </li>
-            </ul>
-          </nav>
+          <Nav/>
         </header>
-        <Inicio/>
+        <Inicio />
       </div>
 
     </>
