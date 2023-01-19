@@ -11,16 +11,16 @@ export default class NextJsCarousel extends Component {
         return (
             <div>
                 <Carousel>
-                    <div className="h-[500px]">
+                    <div className=" h-[500px]">
                         <Image src={imagem1} alt="imagem1"
                         className="opacity-80"
                         />
                     </div>
-                    <div  className="h-[500px]">
+                    <div  className=" h-96  md:h-[500px]">
                         <Image src={imagem2} alt="imagem2" 
                         className="opacity-80"/>
                     </div>
-                    <div className="h-[500px]">
+                    <div className="h-96   md:h-[500px]">
                         <Image src={imagem3} alt="imagem3" 
                         className="opacity-80"/>
                     </div>

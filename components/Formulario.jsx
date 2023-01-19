@@ -18,7 +18,7 @@ export default function Formulario() {
 
     return (
         <div >
-            <div>
+            <div className="w-60">
                 <form
                     onSubmit={sendEmail}
                     className="flex flex-col p-4 bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white"
