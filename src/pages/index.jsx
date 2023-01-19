@@ -22,7 +22,7 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-center lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-slate-400 drop-shadow-dark1">
+          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-slate-400 drop-shadow-dark1">
             <div className="hidden lg:block border-b border-solid border-slate-400 w-1/4 mx-20 mt-10 text-slate-700">
               <p>Informações de teste </p>
               <p>Av Damião Junqueira de Souza</p>

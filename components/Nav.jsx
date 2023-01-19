@@ -8,9 +8,9 @@ export default function Nav() {
         <div className="flex items-start">
 
             <nav className="drop-shadow-dark1 z-20">
-                <section className="MOBILE-MENU mx-5 md:hidden ">
+                <section className="MOBILE-MENU md:hidden ">
                     <div
-                        className="HAMBURGER-ICON space-y-2 mt-2 w-screen"
+                        className="HAMBURGER-ICON p-5 space-y-2 mt-2 w-screen"
                         onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                     >
                         <span className="block h-0.5 w-8  bg-slate-600"></span>
@@ -20,11 +20,11 @@ export default function Nav() {
 
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"} >
                         <div
-                            className="CROSS-ICON fixed z-50 top-0 right-0 px-8 py-8"
+                            className="CROSS-ICON fixed z-50 top-0 right-0 "
                             onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
                         >
                             <svg
-                                className="h-8 w-8 text-white cursor-pointer mr-5"
+                                className="h-8 w-8 text-white cursor-pointer m-5"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -36,7 +36,7 @@ export default function Nav() {
                                 <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                         </div>
-                        <ul className="MENU-LINK-MOBILE-OPEN  bg-slate-600 bg-no-repeat space-y-2  text-white font-bold flex flex-col fixed items-center -ml-10 w-full h-screen">
+                        <ul className="MENU-LINK-MOBILE-OPEN  bg-slate-600 bg-no-repeat space-y-2  text-white font-bold flex flex-col fixed items-center w-screen h-screen">
                             <li className="border w-72 text-center  border-white rounded-md mt-20  text-xl">
                                 <Link href="/" className="font-bold block p-2">Início</Link>
                             </li>
