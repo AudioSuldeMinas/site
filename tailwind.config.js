@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        bgblur: 'url(/bg.jpg)',
+      },
 
     dropShadow: {
         dark: '1px 1px 1px gray',
