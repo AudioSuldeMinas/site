@@ -49,7 +49,7 @@ export default function Home() {
             Algum testo aleatório
           </h2>
           <p className="w-screen p-5 md:w-[820px] flex justify-center items-center text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at blanditiis itaque laboriosam cumque dolor harum mollitia tenetur est, eligendi aut sapiente molestias quas maiores fuga odio corporis adipisci reprehenderit!</p>
-          <button className="bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white ">Learn More</button>
+          <button className="bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white">Learn More</button>
         </div>
         <div>
           <div className="flex flex-col justify-center items-center md:flex-row bg-slate-700">
@@ -63,7 +63,8 @@ export default function Home() {
               <p className="text-white my-10">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
-              <button className="bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white ">Learn More</button>
+              <button className="bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white">Learn More</button>
+
             </div>
           </div>
         </div>
@@ -81,7 +82,8 @@ export default function Home() {
                 />
                 <h2 className="text-slate-700 font-bold">Nome</h2>
                 <p className="text-slate-700 font-bold">Função</p>
-                <button className="bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white ">Learn More</button>
+                <button className="bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white">Learn More</button>
+
               </div>
             </div><div className="w-72 md:w-44">
               <div className=" bg-slate-300 flex flex-col p-2 justify-center items-center border-double border-4 border-slate-700">
@@ -90,7 +92,8 @@ export default function Home() {
                 />
                 <h2 className="text-slate-700 font-bold">Nome</h2>
                 <p className="text-slate-700 font-bold">Função</p>
-                <button className="bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white ">Learn More</button>
+                <button className="bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white">Learn More</button>
+
               </div>
             </div>
           </div>
@@ -111,13 +114,14 @@ export default function Home() {
             <Image src={depoimentos} className='w-[820px] h-32' />
             <h2 className='p-2 text-slate-700 font-bold text-2xl'>Clentes e Testemulhos</h2>
             <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-            <button className="bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white ">Learn More</button>
+            <button className="bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white">Learn More</button>
+
           </div>
         </div>
 
         <div className='mt-20 bg-slate-700 flex justify-around items-center text-white'>
           <div className="bg-slate-700 flex justify-center items-center gap-10 p-5">
-            <Link href="/???">
+            <Link href="https://instagram.com/audiosuldeminas?igshid=NTdlMDg3MTY=">
               <FontAwesomeIcon icon={faInstagram} className="text-white w-8" />
             </Link>
             <Link href="/???">

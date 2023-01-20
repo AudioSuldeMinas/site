@@ -21,7 +21,7 @@ export default function Formulario() {
             <div className="w-60">
                 <form
                     onSubmit={sendEmail}
-                    className="flex flex-col p-4 bg-slate-600 rounded-2xl px-4  border-double border-4 border-slate-300 text-white"
+                    className="flex flex-col p-4 bg-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 text-white"
                 >
                     <label className="mt-2">
                         Nome:
@@ -54,8 +54,9 @@ export default function Formulario() {
                     />
                     <input type="submit" value="Enviar
                     "
-                    className="p-2  border-double border-4 mt-2 rounded-2xl border-slate-300"
+                    className="p-2 mt-2 bg-slate-700 hover:bg-slate-300 hover:text-slate-700 rounded-2xl px-4  border-double border-4 border-slate-300 hover:border-slate-700 text-white"
                     />
+                    
                 </form>
             </div>
 
