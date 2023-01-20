@@ -13,9 +13,9 @@ export default function Nav() {
                         className="HAMBURGER-ICON p-5 space-y-2 mt-2 w-screen"
                         onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                     >
-                        <span className="block h-0.5 w-8  bg-slate-600"></span>
-                        <span className="block h-0.5 w-8 bg-slate-600"></span>
-                        <span className="block h-0.5 w-8 bg-slate-600"></span>
+                        <span className="block h-0.5 w-8  bg-tema-site"></span>
+                        <span className="block h-0.5 w-8 bg-tema-site"></span>
+                        <span className="block h-0.5 w-8 bg-tema-site"></span>
                     </div>
 
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"} >
@@ -36,7 +36,7 @@ export default function Nav() {
                                 <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                         </div>
-                        <ul className="MENU-LINK-MOBILE-OPEN  bg-slate-600 bg-no-repeat space-y-2  text-white font-bold flex flex-col fixed items-center w-screen h-screen">
+                        <ul className="MENU-LINK-MOBILE-OPEN  bg-tema-site bg-no-repeat space-y-2  text-white font-bold flex flex-col fixed items-center w-screen h-screen">
                             <li className="border w-72 text-center  border-white rounded-md mt-20  text-xl">
                                 <Link href="/" className="font-bold block p-2">Início</Link>
                             </li>
@@ -56,32 +56,32 @@ export default function Nav() {
                     </div>
                 </section>
 
-                <ul className="DESKTOP-MENU hidden  md:flex md:justify-center md:items-center bg-slate-400 w-screen p-2 text-slate-700 font-bold items-center" >
+                <ul className="DESKTOP-MENU hidden  md:flex md:justify-center md:items-center bg-tema-site w-screen p-2 text-white font-bold items-center" >
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/" className= "">
-                        <p className="hover:text-white hover:font-bold hover:transition">Início</p></Link>
+                        <p className="hover:text-tema-site hover:font-bold hover:transition drop-shadow-dark1">Início</p></Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/sobre " className=""
                         >
-                            <p className="hover:text-white hover:font-bold  hover:transition">
+                            <p className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">
                             Sobre nós
                             </p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/cidade"className= "">
-                        <p className="hover:text-white hover:font-bold  hover:transition">São Lourenço</p>
+                        <p className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">São Lourenço</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/imoveis" className="">
-                        <p  className="hover:text-white hover:font-bold  hover:transition">Imóveis</p>
+                        <p  className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">Imóveis</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/contato" className= "">
-                        <p className="hover:text-white hover:font-bold hover:transition">Contato</p>
+                        <p className="hover:text-white hover:font-bold hover:transition drop-shadow-dark1">Contato</p>
                         </Link>
                     </li>
                 </ul>
