@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '../../public/Logo_Final.png'
+import patrocinador from '../../public/patrocinador.png'
 import perfil from '../../public/perfil.jpg'
-import depoimentos from '../../public/carrossel/1.jpg'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
+import CarrosselDepoimento from 'components/CarrosselDepoimento'
 import Nav from 'components/Nav'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -75,7 +76,7 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col md:flex-row p-5 gap-5'>
-          <div className="w-72 md:w-44">
+            <div className="w-72 md:w-44">
               <div className=" bg-branco flex flex-col p-2 justify-center items-center border-double border-4 border-tema-site">
                 <Image src={perfil} alt="foto de perfil do médico"
                   className="h-44"
@@ -109,17 +110,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg-tema-site w-screen h-96 flex justify-center items-center'>
-          <div className='w-[680px] flex flex-col justify-center items-center bg-white pb-2'>
-            <Image src={depoimentos} className='w-[820px] h-32' />
-            <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
-            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-            <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+        <div className="bg-tema-site">
+          <CarrosselDepoimento />
+        </div>
+        <div className="flex justify-center items-center  md:items-end pb-5 w-screen h-44 gap-10">
+          <Image src={patrocinador} className="w-14 md:w-44" />
+          <Image src={patrocinador} className="w-14 md:w-44" />
+          <Image src={patrocinador} className="w-14 md:w-44" />
+          <Image src={patrocinador} className="w-14 md:w-44" />
 
-          </div>
         </div>
 
-        <div className='mt-20 bg-tema-site flex justify-around items-center text-white'>
+        <div className=' bg-tema-site flex justify-around items-center text-white'>
           <div className="bg-tema-site flex justify-center items-center gap-10 p-5">
             <Link href="https://instagram.com/audiosuldeminas?igshid=NTdlMDg3MTY=">
               <FontAwesomeIcon icon={faInstagram} className="text-white w-8" />
@@ -132,9 +134,9 @@ export default function Home() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-      <footer className='p-20 bg-black text-white'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
-      </footer>
+        <footer className='p-20 bg-black text-white'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
+        </footer>
       </div>
     </>
   )
