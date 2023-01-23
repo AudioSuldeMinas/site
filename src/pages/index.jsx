@@ -72,7 +72,7 @@ export default function Home() {
 
         <div className='flex flex-col items-center justify-center'>
           <div className="mx-20">
-            <h2 className='text-tema-site font-bold text-2xl flex p-5 pt-20 justify-center items-center border-b-2 border-tema-site w-96'>Conheça nossa equipe</h2>
+            <h2 className='text-tema-site font-bold text-2xl flex p-5 pt-20 justify-center items-center border-b-2 border-tema-site'>Conheça nossa equipe</h2>
           </div>
 
           <div className='flex flex-col md:flex-row p-5 gap-5'>
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="bg-tema-site">
           <CarrosselDepoimento />
         </div>
-        <div className="flex justify-center items-center  md:items-end pb-5 w-screen h-44 gap-10">
+        <div className="flex flex-col items-center justify-center gap-5 md:flex md:flex-row md:justify-center md:p-5 md:items-end w-screen h-44 md:gap-10">
           <Image src={patrocinador} className="w-14 md:w-44" />
           <Image src={patrocinador} className="w-14 md:w-44" />
           <Image src={patrocinador} className="w-14 md:w-44" />
