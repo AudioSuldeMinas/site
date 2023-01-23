@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center'>
+        <div className='w-screen text-center flex flex-col items-center justify-center'>
           <div className="mx-20">
             <h2 className='text-tema-site font-bold text-2xl flex p-5 pt-20 justify-center items-center border-b-2 border-tema-site'>Conheça nossa equipe</h2>
           </div>
