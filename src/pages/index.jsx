@@ -27,9 +27,9 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-branco drop-shadow-dark">
-            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site">
-              <p>Informações de teste </p>
+          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-second-tema-site drop-shadow-dark">
+            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site drop-shadow font-bold">
+              <p className=''>Informações de teste </p>
               <p>Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000</p>
             </div>
             <div className='flex'>
@@ -37,7 +37,7 @@ export default function Home() {
                 className="w-80 drop-shadow-dark p-2"
               />
             </div>
-            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site">
+            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site drop-shadow font-bold">
               <p>35 988454245</p>
               <p>Localidade</p>
             </div>
