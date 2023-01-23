@@ -59,29 +59,29 @@ export default function Nav() {
                 <ul className="DESKTOP-MENU hidden  md:flex md:justify-center md:items-center bg-tema-site w-screen p-2 text-white font-bold items-center" >
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/" className= "">
-                        <p className="hover:text-tema-site hover:font-bold hover:transition drop-shadow-dark1">Início</p></Link>
+                        <p className="hover:text-second-tema-site hover:font-bold hover:transition drop-shadow-dark1">Início</p></Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/sobre " className=""
                         >
-                            <p className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">
+                            <p className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1">
                             Sobre nós
                             </p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/cidade"className= "">
-                        <p className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">São Lourenço</p>
+                        <p className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1">São Lourenço</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/imoveis" className="">
-                        <p  className="hover:text-white hover:font-bold  hover:transition drop-shadow-dark1">Imóveis</p>
+                        <p  className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1">Imóveis</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/contato" className= "">
-                        <p className="hover:text-white hover:font-bold hover:transition drop-shadow-dark1">Contato</p>
+                        <p className="hover:text-second-tema-site hover:font-bold hover:transition drop-shadow-dark1">Contato</p>
                         </Link>
                     </li>
                 </ul>

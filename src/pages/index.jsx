@@ -27,7 +27,7 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-second-tema-site drop-shadow-dark">
+          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-branco to-second-tema-site drop-shadow-dark">
             <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site drop-shadow font-bold">
               <p className=''>Informações de teste </p>
               <p>Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000</p>
@@ -45,7 +45,7 @@ export default function Home() {
           <Nav />
         </header>
         <Inicio />
-        <div className="p-16 flex flex-col justify-center items-center ">
+        <div className="p-16 flex flex-col justify-center items-center text-center">
           <h2 className="text-tema-site text-2xl font-bold p-5">
             Algum testo aleatório
           </h2>
@@ -59,7 +59,7 @@ export default function Home() {
                 className="w-44 border-double border-4 border-branco"
               />
             </div>
-            <div className="p-2 md:pt-16 pb-10 md:pr-20 flex flex-col justify-center items-center w-80">
+            <div className="p-2 md:pt-16 pb-10 md:pr-20 flex flex-col justify-center items-center text-center w-80">
               <h2 className="text-white text-2xl">Médico xyz </h2>
               <p className="text-white my-10">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
@@ -98,8 +98,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen h-96 border-double border-4 border-tema-site'>
+          <div className='flex flex-col justify-center items-center '>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen min-w-[320px] h-96 border-double border-4 border-tema-site'>
             </iframe>
             <div className='w-96 h-96 p-10'>
               <p className='text-tema-site font-bold'>
