@@ -27,17 +27,17 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-branco drop-shadow-dark1">
-            <div className="hidden lg:block border-b border-solid border-branco w-1/4 mx-20 mt-10 text-slate-6s00">
+          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-slate-100 to-branco drop-shadow-dark">
+            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site">
               <p>Informações de teste </p>
-              <p>Av Damião Junqueira de Souza</p>
+              <p>Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000</p>
             </div>
             <div className='flex'>
               <Image src={Logo} alt="logo da empresa"
-                className="w-80 drop-shadow-dark "
+                className="w-80 drop-shadow-dark p-2"
               />
             </div>
-            <div className=" hidden lg:block text-end border-b border-solid border-branco w-1/4 pb-1 mx-20 mt-10  text-tema-site">
+            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site">
               <p>35 988454245</p>
               <p>Localidade</p>
             </div>
@@ -134,8 +134,27 @@ export default function Home() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <footer className='p-20 bg-black text-white'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
+        <footer className='p-10 bg-black text-white'>
+          <div className="flex">
+            <div className='w-1/2 mx-5'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
+            </div>
+            <div >
+              <ul>
+                <li className="flex flex-col mx-10">
+                  <h2 className='pb-5'>Quick Links</h2>
+                  <Link href="/?">Teste</Link>
+                  <Link href="/?">Teste</Link>
+                  <Link href="/?">Teste</Link>
+                  <Link href="/?">Teste</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className='flex justify-between mx-5 py-10 mt-10  border-b border-solid border-branco  border-t '>
+            <p>teste</p>
+            <p>99999999999</p>
+          </div>
         </footer>
       </div>
     </>

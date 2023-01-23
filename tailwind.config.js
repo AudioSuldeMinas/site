@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         bgblur: 'url(/bg.jpg)',
+        bgMobile:'url(/bgMobile.jpg)',
       },
         colors: {
           'tema-site': '#52658B',

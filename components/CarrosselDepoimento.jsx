@@ -14,7 +14,7 @@ export default class NextJsCarouselDepoimentos extends Component {
                             <Image src={depoimentos} className='w-[820px] h-32'/>
                             <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
                             <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-                            <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+                            
                         </div>
                     </div>
                     <div className=" h-96  flex items-center justify-center">
@@ -22,19 +22,16 @@ export default class NextJsCarouselDepoimentos extends Component {
                             <Image src={depoimentos} className='w-[820px] h-32'/>
                             <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
                             <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-                            <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+                            
                         </div>
                     </div>
                     <div className=" h-96  flex items-center justify-center">
                         <div className='w-[680px] flex flex-col justify-center items-center bg-white pb-2'>
                             <Image src={depoimentos} className='w-[820px] h-32'/>
                             <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
-                            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-                            <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+                            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>                       
                         </div>
                     </div>
-                    
-
                 </Carousel>
 
             </div>
