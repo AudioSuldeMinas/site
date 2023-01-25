@@ -61,7 +61,7 @@ export default function Home() {
                 className="w-44 border-double border-4 border-branco mt-10"
               />
             </div>
-            <div className="p-2 md:pt-16 pb-10 md:pr-20 flex flex-col justify-center items-center text-center w-96">
+            <div className="p-2 md:pt-16 pb-10 pl-20 md:pr-20 flex flex-col justify-center items-center text-center w-[500px]">
               <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
               <p className="text-white flex justify-center items-center text-start p-5">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
@@ -81,9 +81,9 @@ export default function Home() {
 
           <div className='flex flex-col md:flex-row justify-center items-center mt-20'>
 
-            <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20 ">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20 w-screen">
 
-            <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+            <div className="bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
                   <Image src={Priscila} alt="foto de perfil do médico"
                     className="h-[350px] p-5"
                   />
@@ -103,8 +103,6 @@ export default function Home() {
                 <Modal nome={'Ana Carolina Mazulka'}
                   informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
                   />
-              </div>
-              <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20">
               </div>
             </div>
           </div>
