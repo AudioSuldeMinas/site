@@ -11,6 +11,7 @@ import Nav from 'components/Nav'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Modal from 'components/Modal'
 
 
 
@@ -65,8 +66,9 @@ export default function Home() {
               <p className="text-white flex justify-center items-center text-start p-5">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
-              <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
-
+              <Modal nome={'Priscila Carla Guimarães'}
+                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
+                  />
             </div>
           </div>
         </div>
@@ -87,7 +89,9 @@ export default function Home() {
                   />
                   <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
                   <p>Fonoaudióloga Audiologista</p>
-                  <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
+                  <Modal nome={'Priscila Carla Guimarães'}
+                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
+                  />
                 </div>
 
               <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
@@ -96,13 +100,15 @@ export default function Home() {
                 />
                 <h2 className="text-tema-site text-2xl font-bold p-2">Ana Carolina Mazulka</h2>
                 <p>Fonoaudióloga Audiologista</p>
-                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
+                <Modal nome={'Ana Carolina Mazulka'}
+                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
+                  />
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20">
               </div>
             </div>
-
           </div>
+          
           <div className='flex flex-col justify-center items-center '>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen min-w-[320px] h-96 border-double border-4 border-tema-site'>
             </iframe>
