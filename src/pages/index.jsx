@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '../../public/Logo_Final.png'
 import patrocinador from '../../public/patrocinador.png'
-import perfil from '../../public/perfil.jpg'
+import Priscila from '../../public/Priscila.jpeg'
+import AnaCarolina from '../../public/AnaCarolina.jpeg'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
 import CarrosselDepoimento from 'components/CarrosselDepoimento'
@@ -55,7 +56,7 @@ export default function Home() {
         <div>
           <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site">
             <div className="flex justify-end p-16">
-              <Image src={perfil} alt="imagen de perfil de um médico"
+              <Image src={Priscila} alt="imagen de perfil de um médico"
                 className="w-44 border-double border-4 border-branco"
               />
             </div>
@@ -70,33 +71,33 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-screen text-center flex flex-col items-center justify-center'>
+        <div className='w-screen text-center flex flex-col items-center justify-center pt-20'>
           <div className="mx-20">
-            <h2 className='text-tema-site font-bold text-2xl flex p-5 pt-20 justify-center items-center border-b-2 border-tema-site'>Conheça nossa equipe</h2>
+            <h2 className='text-tema-site font-bold text-2xl flex p-5  justify-center items-center border-b-2 border-tema-site'>Conheça nossa equipe</h2>
           </div>
 
-          <div className='flex flex-col md:flex-row p-5 gap-5'>
-            <div className="w-72 md:w-44">
-              <div className=" bg-branco flex flex-col p-2 justify-center items-center border-double border-4 border-tema-site">
-                <Image src={perfil} alt="foto de perfil do médico"
-                  className="h-44"
-                />
-                <h2 className="text-tema-site font-bold">Nome</h2>
-                <p className="text-tema-site font-bold">Função</p>
-                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+          <div className='flex flex-col md:flex-row p-5 gap-20'>
 
-              </div>
-            </div><div className="w-72 md:w-44">
-              <div className=" bg-branco flex flex-col p-2 justify-center items-center border-double border-4 border-tema-site">
-                <Image src={perfil} alt="foto de perfil do médico"
-                  className="h-44"
+            <div className="flex flex-col md:flex-row justify-center items-center  gap-20 pb-20">
+              <div className=" bg-branco flex flex-col p-5 justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+                <Image src={Priscila} alt="foto de perfil do médico"
+                  className="h-72"
                 />
-                <h2 className="text-tema-site font-bold">Nome</h2>
-                <p className="text-tema-site font-bold">Função</p>
-                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
-
+                <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
+                <p>Fonoaudióloga Audiologista</p>
+                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
               </div>
+              <div className=" bg-branco flex flex-col p-5 justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+                <Image src={AnaCarolina} alt="foto de perfil do médico"
+                  className="h-72"
+                />
+                <h2 className="text-tema-site text-2xl font-bold p-2 px-4">Ana Carolina Mazulka</h2>
+                <p>Fonoaudióloga Audiologista</p>
+                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
+              </div>
+
             </div>
+
           </div>
           <div className='flex flex-col justify-center items-center '>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen min-w-[320px] h-96 border-double border-4 border-tema-site'>
