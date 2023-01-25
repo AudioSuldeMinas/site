@@ -23,7 +23,7 @@ export default function Formulario() {
                     onSubmit={sendEmail}
                     className="flex flex-col p-4 bg-tema-site rounded-2xl px-4  border-double border-4 border-branco text-white"
                 >
-                    <label className="mt-2">
+                    <label className="mt-2 text-sm p-1">
                         Nome:
                     </label>
                     <input type="text" name="name" 
@@ -33,7 +33,7 @@ export default function Formulario() {
                         value={name}
                     />
 
-                    <label className="mt-2">
+                    <label className="mt-2 text-sm p-1">
                         E-mail:
                     </label>
                     <input type="text" name="name" 
@@ -43,7 +43,7 @@ export default function Formulario() {
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
-                    <label className="mt-2">
+                    <label className="mt-2 text-sm p-1">
                         Mensagem:
                     </label>
                     <textarea
@@ -54,7 +54,7 @@ export default function Formulario() {
                     />
                     <input type="submit" value="Enviar
                     "
-                    className="p-2 mt-2 bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4  border-double border-4 border-branco hover:border-tema-site text-white"
+                    className="p-2 mt-2 bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4  border-double border-4 border-branco hover:border-tema-site text-white text-sm"
                     />
                     
                 </form>

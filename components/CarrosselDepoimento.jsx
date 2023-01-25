@@ -8,7 +8,7 @@ export default class NextJsCarouselDepoimentos extends Component {
     render() {
         return (
             <div>
-               <Carousel showArrows={true} autoPlay interval={3000}infiniteLoop transitionTime={400}>     
+               <Carousel showArrows={true} autoPlay interval={3000}infiniteLoop transitionTime={800}>     
                 <div className=" h-96  flex items-center justify-center">
                         <div className='w-72 md:w-[680px] flex flex-col justify-center items-center bg-white'>
                             <Image src={depoimentos} className='w-[820px] h-32'/>

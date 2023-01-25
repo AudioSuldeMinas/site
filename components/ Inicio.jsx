@@ -11,7 +11,7 @@ export default function Inicio() {
                     <h2 className="text-lg md:text-2xl  font-bold text-tema-site p-5 drop-shadow-dark1">
                         Lorem ipsum dolor sit amet consectetur.
                     </h2>
-                    <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
+                    <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white py-2">Learn More</button>
                 </div>
                 <div className="mt-5 z-10">
                     <Formulario/>
