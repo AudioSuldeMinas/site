@@ -10,7 +10,7 @@ export default class NextJsCarousel extends Component {
     render() {
         return (
             <div>
-                <Carousel>
+                <Carousel showArrows={true} autoPlay interval={3000}infiniteLoop transitionTime={400}>
                     <div className=" h-[500px]">
                         <Image src={imagem1} alt="imagem1"
                         />

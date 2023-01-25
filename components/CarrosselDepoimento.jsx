@@ -8,30 +8,29 @@ export default class NextJsCarouselDepoimentos extends Component {
     render() {
         return (
             <div>
-                <Carousel>
-                    <div className=" h-96  flex items-center justify-center">
-                        <div className='w-[680px] flex flex-col justify-center items-center bg-white pb-2'>
+               <Carousel showArrows={true} autoPlay interval={3000}infiniteLoop transitionTime={400}>     
+                <div className=" h-96  flex items-center justify-center">
+                        <div className='w-72 md:w-[680px] flex flex-col justify-center items-center bg-white'>
                             <Image src={depoimentos} className='w-[820px] h-32'/>
-                            <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
-                            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-                            
+                            <h2 className=' text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
+                            <p className=' mb-5 text-center m-2 md:mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
                         </div>
                     </div>
                     <div className=" h-96  flex items-center justify-center">
-                        <div className='w-[680px] flex flex-col justify-center items-center bg-white pb-2'>
+                        <div className='w-72 md:w-[680px] flex flex-col justify-center items-center bg-white'>
                             <Image src={depoimentos} className='w-[820px] h-32'/>
-                            <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
-                            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
-                            
+                            <h2 className=' text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
+                            <p className=' mb-5 text-center m-2 md:mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
                         </div>
                     </div>
                     <div className=" h-96  flex items-center justify-center">
-                        <div className='w-[680px] flex flex-col justify-center items-center bg-white pb-2'>
+                        <div className='w-72 md:w-[680px] flex flex-col justify-center items-center bg-white'>
                             <Image src={depoimentos} className='w-[820px] h-32'/>
-                            <h2 className='p-2 text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
-                            <p className=' mb-5 text-center mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>                       
+                            <h2 className=' text-tema-site font-bold text-2xl'>Clentes e Testemulhos</h2>
+                            <p className=' mb-5 text-center m-2 md:mx-20'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt voluptatem deleniti .</p>
                         </div>
                     </div>
+                    
                 </Carousel>
 
             </div>
