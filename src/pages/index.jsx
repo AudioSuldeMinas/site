@@ -85,7 +85,7 @@ export default function Home() {
 
             <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
                   <Image src={Priscila} alt="foto de perfil do médico"
-                    className="h-[350px] p-2"
+                    className="h-[350px] p-5"
                   />
                   <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
                   <p>Fonoaudióloga Audiologista</p>
@@ -96,7 +96,7 @@ export default function Home() {
 
               <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
                 <Image src={Ana} alt="foto de perfil do médico"
-                  className="h-[350px] p-2"
+                  className="h-[350px] p-5"
                 />
                 <h2 className="text-tema-site text-2xl font-bold p-2">Ana Carolina Mazulka</h2>
                 <p>Fonoaudióloga Audiologista</p>
