@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '../../public/Logo_Final.png'
 import patrocinador from '../../public/patrocinador.png'
+import Ana from '../../public/Ana.jpeg'
 import Priscila from '../../public/Priscila.jpeg'
-import AnaCarolina from '../../public/AnaCarolina.jpeg'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
 import CarrosselDepoimento from 'components/CarrosselDepoimento'
@@ -55,14 +55,14 @@ export default function Home() {
         </div>
         <div>
           <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site">
-            <div className="flex justify-end p-16">
+            <div>
               <Image src={Priscila} alt="imagen de perfil de um médico"
-                className="w-44 border-double border-4 border-branco"
+                className="w-44 border-double border-4 border-branco mt-10"
               />
             </div>
-            <div className="p-2 md:pt-16 pb-10 md:pr-20 flex flex-col justify-center items-center text-center w-80">
-              <h2 className="text-white text-2xl">Médico xyz </h2>
-              <p className="text-white my-10">
+            <div className="p-2 md:pt-16 pb-10 md:pr-20 flex flex-col justify-center items-center text-center w-96">
+              <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
+              <p className="text-white flex justify-center items-center text-start p-5">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
               <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white">Learn More</button>
@@ -71,31 +71,35 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-screen text-center flex flex-col items-center justify-center pt-20'>
-          <div className="mx-20">
-            <h2 className='text-tema-site font-bold text-2xl flex p-5  justify-center items-center border-b-2 border-tema-site'>Conheça nossa equipe</h2>
+        <div className='text-center flex flex-col pt-20'>
+          <div className=" mx-5 md:mx-20 border-b-2 border-tema-site">
+            <h2 className='text-tema-site font-bold text-xl md:text-4xl'>Conheça nossa equipe</h2>
+            <p className="p-5 flex text-center text-sm md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ad doloremque id laborum distinctio quaerat quod, odio modi. Quo nemo dolore corporis sequi perspiciatis nobis accusamus totam tenetur error.</p>
           </div>
 
-          <div className='flex flex-col md:flex-row p-5 gap-20'>
+          <div className='flex flex-col md:flex-row justify-center items-center mt-20'>
 
-            <div className="flex flex-col md:flex-row justify-center items-center  gap-20 pb-20">
-              <div className=" bg-branco flex flex-col p-5 justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                <Image src={Priscila} alt="foto de perfil do médico"
-                  className="h-72"
+            <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20 ">
+
+            <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+                  <Image src={Priscila} alt="foto de perfil do médico"
+                    className="h-[350px] p-2"
+                  />
+                  <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
+                  <p>Fonoaudióloga Audiologista</p>
+                  <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
+                </div>
+
+              <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+                <Image src={Ana} alt="foto de perfil do médico"
+                  className="h-[350px] p-2"
                 />
-                <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
+                <h2 className="text-tema-site text-2xl font-bold p-2">Ana Carolina Mazulka</h2>
                 <p>Fonoaudióloga Audiologista</p>
                 <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
               </div>
-              <div className=" bg-branco flex flex-col p-5 justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                <Image src={AnaCarolina} alt="foto de perfil do médico"
-                  className="h-72"
-                />
-                <h2 className="text-tema-site text-2xl font-bold p-2 px-4">Ana Carolina Mazulka</h2>
-                <p>Fonoaudióloga Audiologista</p>
-                <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white m-5">Learn More</button>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20">
               </div>
-
             </div>
 
           </div>
