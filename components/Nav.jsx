@@ -10,7 +10,7 @@ export default function Nav() {
             <nav className="drop-shadow-dark1 z-20">
                 <section className="MOBILE-MENU md:hidden ">
                     <div
-                        className="HAMBURGER-ICON p-5 space-y-2 mt-2 w-sreen"
+                        className="HAMBURGER-ICON p-5 space-y-2 mt-2 w-screen"
                         onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                     >
                         <span className="block h-0.5 w-8  bg-tema-site"></span>
