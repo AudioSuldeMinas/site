@@ -58,7 +58,7 @@ export default function Home() {
           <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white py-2">Learn More</button>
         </div>
         <div>
-          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site">
+          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site pt-5">
             <div>
               <Image src={Priscila2} alt="imagen de perfil de um médico"
                 className="w-44 border-double border-4 border-branco "
@@ -70,13 +70,13 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
               <Modal nome={'Priscila Carla Guimarães'}
-                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                  />
+                informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
+              />
             </div>
           </div>
         </div>
 
-        <div className='text-center flex flex-col pt-20'>
+        <div className='bg-red-900 w-sreen text-center flex flex-col pt-20'>
           <div className=" mx-5 md:mx-20 b">
             <h2 className='text-tema-site font-bold text-sm md:text-4xl'>Conheça nossa equipe</h2>
             <p className="p-5 flex text-center text-sm md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ad doloremque id laborum distinctio quaerat quod, odio modi. Quo nemo dolore corporis sequi perspiciatis nobis accusamus totam tenetur error.</p>
@@ -86,16 +86,16 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20 w-screen">
 
-            <div className="bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                  <Image src={Priscila} alt="foto de perfil do médico"
-                    className="h-[350px] p-5"
-                  />
-                  <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
-                  <p className="text-sm">Fonoaudióloga Audiologista</p>
-                  <Modal nome={'Priscila Carla Guimarães'}
+              <div className="bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
+                <Image src={Priscila} alt="foto de perfil do médico"
+                  className="h-[350px] p-5"
+                />
+                <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
+                <p className="text-sm">Fonoaudióloga Audiologista</p>
+                <Modal nome={'Priscila Carla Guimarães'}
                   informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                  />
-                </div>
+                />
+              </div>
 
               <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
                 <Image src={Ana} alt="foto de perfil do médico"
@@ -105,7 +105,7 @@ export default function Home() {
                 <p className="text-sm">Fonoaudióloga Audiologista</p>
                 <Modal nome={'Ana Carolina Mazulka'}
                   informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                  />
+                />
               </div>
               <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
                 <Image src={Marina} alt="foto de perfil do médico"
@@ -115,15 +115,15 @@ export default function Home() {
                 <p className="text-sm">Fonoaudióloga Audiologista</p>
                 <Modal nome={'Marina Motta Silva'}
                   informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                  />
+                />
               </div>
             </div>
           </div>
-          
+
           <div className='w-screen md:w-full flex flex-col  justify-center items-center '>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-80 md:w-screen min-w-[320px] h-96 border-double border-4 border-tema-site '>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen md:w-screen  h-96 border-double border-4 border-tema-site '>
             </iframe>
-            <div className='w-96 h-96 p-10'>
+            <div className=' h-96 p-10'>
               <p className='text-tema-site font-bold text-sm'>
                 Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000
               </p>
@@ -143,10 +143,10 @@ export default function Home() {
 
         </div>
 
-        <div className=' bg-tema-site flex justify-around items-center text-white'>
+        <div className='w-full bg-tema-site flex justify-around items-center text-white'>
           <div className="bg-tema-site flex justify-center items-center gap-10 p-5">
             <Link href="https://instagram.com/audiosuldeminas?igshid=NTdlMDg3MTY=">
-              <FontAwesomeIcon icon={faInstagram} className="text-white w-8"/>
+              <FontAwesomeIcon icon={faInstagram} className="text-white w-8" />
             </Link>
             <Link href="/???">
               <FontAwesomeIcon icon={faFacebook} className="text-white w-8" />
@@ -156,7 +156,7 @@ export default function Home() {
             <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <footer className='p-10 bg-black text-white'>
+        <footer className='p-10 bg-black text-white w-full'>
           <div className="flex">
             <div className='w-1/2 mx-5'>
               <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
@@ -165,10 +165,10 @@ export default function Home() {
               <ul>
                 <li className="flex flex-col mx-10">
                   <h2 className='pb-5 text-sm"'>Quick Links</h2>
-                  <Link href="/?"className='text-sm'>Teste</Link>
-                  <Link href="/?"className='text-sm'>Teste</Link>
-                  <Link href="/?"className='text-sm'>Teste</Link>
-                  <Link href="/?"className='text-sm'>Teste</Link>
+                  <Link href="/?" className='text-sm'>Teste</Link>
+                  <Link href="/?" className='text-sm'>Teste</Link>
+                  <Link href="/?" className='text-sm'>Teste</Link>
+                  <Link href="/?" className='text-sm'>Teste</Link>
                 </li>
               </ul>
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
             <p className="text-sm">99999999999</p>
           </div>
         </footer>
-        <Wpp/>
+        <Wpp />
       </div>
     </>
   )
