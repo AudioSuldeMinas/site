@@ -58,7 +58,7 @@ export default function Home() {
           <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white py-2">Learn More</button>
         </div>
         <div>
-          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site p-20">
+          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site p-14">
             <div>
               <Image src={Priscila2} alt="imagen de perfil de um médico"
                 className="w-44 border-double border-4 border-branco "
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
             <div className=" md:pl-20 md:pr-20 flex flex-col justify-center items-center text-center md:w-[500px]">
               <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
-              <p className="text-white flex justify-center items-center text-center p-5 text-sm" >
+              <p className="text-white flex justify-center items-center text-center mt-5 text-sm" >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
               <Modal nome={'Priscila Carla Guimarães'}
