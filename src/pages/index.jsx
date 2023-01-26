@@ -33,16 +33,16 @@ export default function Home() {
       <div>
         <header>
           <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-branco to-second-tema-site drop-shadow-dark">
-            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site drop-shadow font-bold">
+            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site drop-shadow font-bold h-20">
               <p className='text-sm'>Informações de teste </p>
-              <p className="text-sm">Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000</p>
+              <p className="text-sm">Av. Antônio Junqueira de Souza, </p>
             </div>
-            <div className='flex'>
+            <div className='flex justify-center items-end'>
               <Image src={Logo} alt="logo da empresa"
-                className="w-80 h-28 drop-shadow-dark p-2"
+                className="w-44 h-28 lg:w-[500px] drop-shadow-dark p-2"
               />
             </div>
-            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site drop-shadow font-bold">
+            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site drop-shadow font-bold h-20">
               <p className="text-sm">35 988454245</p>
               <p className="ttext-sm">Localidade</p>
             </div>
@@ -61,12 +61,12 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site">
             <div>
               <Image src={Priscila2} alt="imagen de perfil de um médico"
-                className="w-44 border-double border-4 border-branco mt-10"
+                className="w-44 border-double border-4 border-branco "
               />
             </div>
-            <div className="p-2 md:pt-16 pb-10 pl-20 md:pr-20 flex flex-col justify-center items-center text-center w-[500px]">
+            <div className="p-2 md:pt-16 pb-10 md:pl-20 md:pr-20 flex flex-col justify-center items-center text-center md:w-[500px]">
               <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
-              <p className="text-white flex justify-center items-center text-start p-5 text-sm">
+              <p className="text-white flex justify-center items-center text-center p-5 text-sm" >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
               </p>
               <Modal nome={'Priscila Carla Guimarães'}
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         <div className='text-center flex flex-col pt-20'>
-          <div className=" mx-5 md:mx-20 border-b-2 border-tema-site">
+          <div className=" mx-5 md:mx-20 b">
             <h2 className='text-tema-site font-bold text-sm md:text-4xl'>Conheça nossa equipe</h2>
             <p className="p-5 flex text-center text-sm md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ad doloremque id laborum distinctio quaerat quod, odio modi. Quo nemo dolore corporis sequi perspiciatis nobis accusamus totam tenetur error.</p>
           </div>
