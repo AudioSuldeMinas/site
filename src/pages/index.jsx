@@ -58,13 +58,13 @@ export default function Home() {
           <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white py-2">Learn More</button>
         </div>
         <div>
-          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site pt-5">
+          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site p-20">
             <div>
               <Image src={Priscila2} alt="imagen de perfil de um médico"
                 className="w-44 border-double border-4 border-branco "
               />
             </div>
-            <div className="p-2 md:pt-16 pb-10 md:pl-20 md:pr-20 flex flex-col justify-center items-center text-center md:w-[500px]">
+            <div className=" md:pl-20 md:pr-20 flex flex-col justify-center items-center text-center md:w-[500px]">
               <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
               <p className="text-white flex justify-center items-center text-center p-5 text-sm" >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
@@ -136,10 +136,10 @@ export default function Home() {
           <CarrosselDepoimento />
         </div>
         <div className="flex flex-col items-center justify-center gap-5 md:flex md:flex-row md:justify-center md:p-5 md:items-end w-screen h-44 md:gap-10">
-          <Image src={patrocinador} className="w-14 md:w-44" />
-          <Image src={patrocinador} className="w-14 md:w-44" />
-          <Image src={patrocinador} className="w-14 md:w-44" />
-          <Image src={patrocinador} className="w-14 md:w-44" />
+          <Image src={patrocinador} alt="logo patrocinador"className="w-14 md:w-44" />
+          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
+          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
+          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
 
         </div>
 
