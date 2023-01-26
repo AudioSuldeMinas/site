@@ -39,7 +39,7 @@ export default function Home() {
             </div>
             <div className='flex justify-center items-end'>
               <Image src={Logo} alt="logo da empresa"
-                className="w-44 h-28 lg:w-[500px] drop-shadow-dark p-2"
+                className="w-full h-28 lg:w-[500px] drop-shadow-dark p-2"
               />
             </div>
             <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site drop-shadow font-bold h-20">
@@ -120,8 +120,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className='flex flex-col justify-center items-center '>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen min-w-[320px] h-96 border-double border-4 border-tema-site'>
+          <div className='w-screen md:w-full flex flex-col  justify-center items-center '>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-80 md:w-screen min-w-[320px] h-96 border-double border-4 border-tema-site '>
             </iframe>
             <div className='w-96 h-96 p-10'>
               <p className='text-tema-site font-bold text-sm'>
