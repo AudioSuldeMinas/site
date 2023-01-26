@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg-red-900 w-sreen text-center flex flex-col pt-20'>
+        <div className='w-sreen text-center flex flex-col pt-20'>
           <div className=" mx-5 md:mx-20 b">
             <h2 className='text-tema-site font-bold text-sm md:text-4xl'>Conheça nossa equipe</h2>
             <p className="p-5 flex text-center text-sm md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ad doloremque id laborum distinctio quaerat quod, odio modi. Quo nemo dolore corporis sequi perspiciatis nobis accusamus totam tenetur error.</p>
