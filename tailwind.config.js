@@ -20,6 +20,9 @@ module.exports = {
         dark: '1px 1px 1px gray',
         dark1:'1px 1px 1px black',
         branco1:'1px 1px 1px white',
+      },
+      borderRadius: {
+        'large': '50px',
       }
 },
   },

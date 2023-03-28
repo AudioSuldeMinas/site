@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Logo from '../../public/Logo_Final.png'
 import patrocinador from '../../public/patrocinador.png'
 import Ana from '../../public/Ana.jpeg'
 import Marina from '../../public/Marina.jpeg'
@@ -10,6 +9,7 @@ import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
 import CarrosselDepoimento from 'components/CarrosselDepoimento'
 import Nav from 'components/Nav'
+import Nav1 from 'components/Nav1'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -32,21 +32,7 @@ export default function Home() {
 
       <div>
         <header>
-          <div className="flex flex-row justify-center  lg:justify-between p-2 bg-gradient-to-t from-branco to-second-tema-site drop-shadow-dark">
-            <div className="hidden lg:block border-b border-solid border-tema-site w-1/4 mx-20 mt-10 text-tema-site drop-shadow font-bold h-20">
-              <p className='text-sm'>Informações de teste </p>
-              <p className="text-sm">Av. Antônio Junqueira de Souza, </p>
-            </div>
-            <div className='flex justify-center items-end'>
-              <Image src={Logo} alt="logo da empresa"
-                className="w-full h-28 lg:w-[500px] drop-shadow-dark p-2"
-              />
-            </div>
-            <div className="hidden lg:block text-end border-b border-solid border-tema-site w-1/4 pb-1 mx-20 mt-10  text-tema-site drop-shadow font-bold h-20">
-              <p className="text-sm">35 988454245</p>
-              <p className="ttext-sm">Localidade</p>
-            </div>
-          </div>
+          <Nav1/>
           <Nav />
         </header>
         <Inicio />

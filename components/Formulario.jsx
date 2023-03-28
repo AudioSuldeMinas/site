@@ -4,12 +4,12 @@ import { useState } from "react"
 export default function Formulario() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [telefone, setTelefones] = useState('')
 
     function sendEmail(e) {
         e.preventDefault();
 
-        if (name === "" || email === "" || message === "") {
+        if (name === "" || email === "" || telefone === "") {
             alert("Preencha todos os campos")
             return;
         }
@@ -18,45 +18,49 @@ export default function Formulario() {
 
     return (
         <div >
-            <div className="w-60">
+            <div className="w-80 h-96 flex justify-center items-center right-32 top-48 absolute border-2 border-branco rounded-large text-sm">
                 <form
                     onSubmit={sendEmail}
-                    className="flex flex-col p-4 bg-tema-site rounded-2xl px-4  border-double border-4 border-branco text-white"
+                    className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large px-4 text-white "
                 >
+                    <h2 className="text-2xl font-bold">
+                        Ligamos para você!
+                    </h2>
+                    <p className="text-sm">
+                        Preencha o formulario abaixo,
+                    </p>
+                    <p className="text-sm">
+                        e receba nosso contato
+                    </p>
                     <label className="mt-2 text-sm p-1">
                         Nome:
                     </label>
-                    <input type="text" name="name" 
-                    className="rounded p-2"
-                    placeholder="Digite o seu nome"                   
+                    <input type="text" name="name"
+                        className="rounded-3xl w-48 p-1 text-sm"
                         onChange={(e) => setName(e.target.value)}
                         value={name}
                     />
 
-                    <label className="mt-2 text-sm p-1">
+                    <label className="text-sm p-1">
                         E-mail:
                     </label>
-                    <input type="text" name="name" 
-                    className="rounded p-2"
-                    placeholder="Digite seu e-mail"
-
+                    <input type="text" name="name"
+                        className="rounded-3xl w-48 p-1 text-sm"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
-                    <label className="mt-2 text-sm p-1">
-                        Mensagem:
+                    <label className="text-sm p-1">
+                        Telefone
                     </label>
-                    <textarea
-                        placeholder="Digite sua mensagem..."
-                        className="rounded p-2"
-                        onChange={(e) => setMessage(e.target.value)}
-                        value={message}
+                    <input
+                        className="rounded-3xl w-48 p-1 text-sm"
+                        onChange={(e) => setTelefones(e.target.value)}
+                        value={telefone}
                     />
-                    <input type="submit" value="Enviar
-                    "
-                    className="p-2 mt-2 bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4  border-double border-4 border-branco hover:border-tema-site text-white text-sm"
+                    <input type="submit" value="Enviar"
+                        className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer"
                     />
-                    
+
                 </form>
             </div>
 

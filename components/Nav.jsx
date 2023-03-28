@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useState } from "react"; // import state
+import Image from 'next/image';
+import imagem1 from '../public/Logo_Final.png'
 export default function Nav() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
     
@@ -7,7 +9,7 @@ export default function Nav() {
     return (
         <div className="flex items-start">
 
-            <nav className="drop-shadow-dark1 z-20">
+            <nav className="z-20">
                 <section className="MOBILE-MENU md:hidden ">
                     <div
                         className="HAMBURGER-ICON p-5 space-y-2 mt-2 w-screen"
@@ -56,32 +58,37 @@ export default function Nav() {
                     </div>
                 </section>
 
-                <ul className="DESKTOP-MENU hidden  md:flex md:justify-center md:items-center bg-tema-site w-screen p-2 text-white font-bold items-center" >
+                <ul className="DESKTOP-MENU hidden  md:flex md:justify-center md:items-center  w-screen p-2 text-white font-bold items-center">
+                    <Image src={imagem1} alt='logo da empresa'
+                    width={250}
+                    height={250}
+                    className='mr-20'
+                    />
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/" className= "">
-                        <p className="hover:text-second-tema-site hover:font-bold hover:transition drop-shadow-dark1 text-sm">Início</p></Link>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Início</p></Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/sobre " className=""
                         >
-                            <p className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1 text-sm">
-                            Sobre nós
+                            <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">
+                            Quem somos
                             </p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/cidade"className= "">
-                        <p className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1 text-sm">São Lourenço</p>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Serviços</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/imoveis" className="">
-                        <p  className="hover:text-second-tema-site hover:font-bold  hover:transition drop-shadow-dark1 text-sm">Imóveis</p>
+                        <p  className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Produtos</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/contato" className= "">
-                        <p className="hover:text-second-tema-site hover:font-bold hover:transition drop-shadow-dark1 text-sm">Contato</p>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Contato</p>
                         </Link>
                     </li>
                 </ul>
