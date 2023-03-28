@@ -43,13 +43,13 @@ export default function Nav() {
                                 <Link href="/" className="font-bold block p-2">Início</Link>
                             </li>
                             <li className="border w-72 text-center border-white rounded-md  text-xl">
-                                <Link href="/sobre" className="font-bold block p-2">Sobre nós</Link>
+                                <Link href="/sobre" className="font-bold block p-2">Quem somos</Link>
                             </li>
                             <li className="border w-72 text-center  border-white rounded-md  text-xl">
-                                <Link href="/cidade" className="font-bold block p-2">São Lourenço</Link>
+                                <Link href="/cidade" className="font-bold block p-2">Serviços</Link>
                             </li>
                             <li className="border w-72 text-center border-white rounded-md  text-xl">
-                                <Link href="/imoveis" className="font-bold block p-2">Imóveis</Link>
+                                <Link href="/imoveis" className="font-bold block p-2">Produtos</Link>
                             </li>
                             <li className="border w-72 text-center border-white rounded-md text-xl">
                                 <Link href="/contato " className="font-bold block p-2">Contato</Link>
@@ -66,29 +66,29 @@ export default function Nav() {
                     />
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/" className= "">
-                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Início</p></Link>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Início</p></Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/sobre " className=""
                         >
-                            <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">
+                            <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">
                             Quem somos
                             </p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/cidade"className= "">
-                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Serviços</p>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Serviços</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/imoveis" className="">
-                        <p  className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Produtos</p>
+                        <p  className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Produtos</p>
                         </Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
                         <Link href="/contato" className= "">
-                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site hover:transition">Contato</p>
+                        <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Contato</p>
                         </Link>
                     </li>
                 </ul>

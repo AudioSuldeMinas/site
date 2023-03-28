@@ -18,7 +18,7 @@ export default function Formulario() {
 
     return (
         <div >
-            <div className="w-80 h-96 flex justify-center items-center right-32 top-48 absolute border-2 border-branco rounded-large text-sm">
+            <div className="w-[305px] h-[380px] flex justify-center items-center right-32 top-48 absolute border-2 border-branco rounded-large text-sm">
                 <form
                     onSubmit={sendEmail}
                     className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large px-4 text-white "
@@ -36,7 +36,7 @@ export default function Formulario() {
                         Nome:
                     </label>
                     <input type="text" name="name"
-                        className="rounded-3xl w-48 p-1 text-sm"
+                        className="rounded-3xl w-48 p-1 text-sm text-black"
                         onChange={(e) => setName(e.target.value)}
                         value={name}
                     />
@@ -45,7 +45,7 @@ export default function Formulario() {
                         E-mail:
                     </label>
                     <input type="text" name="name"
-                        className="rounded-3xl w-48 p-1 text-sm"
+                        className="rounded-3xl w-48 p-1 text-sm text-black"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
@@ -53,12 +53,12 @@ export default function Formulario() {
                         Telefone
                     </label>
                     <input
-                        className="rounded-3xl w-48 p-1 text-sm"
+                        className="rounded-3xl w-48 p-1 text-sm text-black"
                         onChange={(e) => setTelefones(e.target.value)}
                         value={telefone}
                     />
                     <input type="submit" value="Enviar"
-                        className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer"
+                        className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer hover:text-branco hover:bg-zinc-800 transition ease-in-out duration-300"
                     />
 
                 </form>
