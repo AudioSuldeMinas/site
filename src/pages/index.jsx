@@ -32,16 +32,48 @@ export default function Home() {
 
       <div>
         <header>
-          <Nav1/>
+          <Nav1 />
           <Nav />
         </header>
         <Inicio />
-        <div className="p-16 flex flex-col justify-center items-center text-center">
-          <h2 className="text-tema-site text-2xl font-bold p-5">
-            Algum testo aleatório
-          </h2>
-          <p className="w-screen p-5 md:w-[820px] flex justify-center items-center text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at blanditiis itaque laboriosam cumque dolor harum mollitia tenetur est, eligendi aut sapiente molestias quas maiores fuga odio corporis adipisci reprehenderit!</p>
-          <button className="bg-tema-site hover:bg-branco hover:text-tema-site rounded-2xl px-4 font-bold  border-double border-4 border-slate-300 hover:border-tema-site text-white py-2">Learn More</button>
+        <div className='flex flex-col lg:flex-row justify-around'>
+          <div className='p-16 lg:w-1/2 flex flex-col '>
+            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold'>
+              Quem somos
+            </h2>
+            <p className='text-justify'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia? Ex ea maxime assumenda sunt? Architecto, quam et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora neque maiores natus odit odio eos, dolorum sapiente laboriosam eius vel. Neque nihil fuga sunt obcaecati nulla illo explicabo, nemo possimus.lore
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia? Ex ea maxime assumenda sunt? Architecto, quam et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora neque maiores natus odit odio eos, dolorum sapiente laboriosam eius vel. Neque nihil fuga sunt obcaecati nulla illo explicabo, nemo possimus.lore
+            </p>
+          </div>
+          <div className="p-16 flex text-center md:text-start flex-col">
+            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold'>
+              Colaboradores
+            </h2>
+            <div className='flex flex-col lg:flex-row gap-5 justify-center items-center text-center'>
+              <div>
+                <div className='rounded-3xl border-2 border-tema-site w-[266px] h-[300px] flex justify-center items-center'>
+                  <Image src={Priscila2} alt="imagen de perfil de um médico"
+                    className="w-64 h-[290px] border-double border-4 border-branco rounded-3xl"
+                  />
+                </div>
+                <h2 className='text-xl text-tema-site font-bold'>
+                  Priscila Guimarães
+                </h2>
+                <p>Fonoaudióloga Audiologista</p>
+              </div>
+              <div>
+                <div className='rounded-3xl border-2 border-tema-site w-[266px] h-[300px] flex justify-center items-center'>
+                  <Image src={Ana} alt="foto de perfil do médico"
+                    className="w-64 h-[290px] border-double border-4 border-branco rounded-3xl" />
+                </div>
+                <h2 className='text-xl text-tema-site font-bold'>
+                  Ana Carolina Mazulka
+                </h2>
+                <p>Fonoaudióloga Audiologista</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site p-14">
@@ -122,7 +154,7 @@ export default function Home() {
           <CarrosselDepoimento />
         </div>
         <div className="flex flex-col items-center justify-center gap-5 md:flex md:flex-row md:justify-center md:p-5 md:items-end w-screen h-44 md:gap-10">
-          <Image src={patrocinador} alt="logo patrocinador"className="w-14 md:w-44" />
+          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
           <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
           <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
           <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />

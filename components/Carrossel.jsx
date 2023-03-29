@@ -11,15 +11,15 @@ export default class NextJsCarousel extends Component {
         return (
             <div>
                 <Carousel showArrows={true} autoPlay interval={3000}infiniteLoop transitionTime={800}>
-                    <div className=" h-[500px]">
+                    <div className=" h-96 md:h-[500px]">
                         <Image src={imagem1} alt="imagem1"
                         />
                     </div>
-                    <div  className=" h-96  md:h-[500px]">
+                    <div  className=" h-96 md:h-[500px]">
                         <Image src={imagem2} alt="imagem2" 
                         className=""/>
                     </div>
-                    <div className="h-96   md:h-[500px]">
+                    <div className="h-96 md:h-[500px]">
                         <Image src={imagem3} alt="imagem3" 
                         />
                     </div>
