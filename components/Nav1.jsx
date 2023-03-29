@@ -9,7 +9,7 @@ export default function Nav1() {
         <div className="bg-tema-site p-2 flex justify-around text-sm font-bold">
             <ul className=" flex justify-center  text-branco gap-10">
                 <l1 className='flex justify-center align-center items-center'>
-                    <Link href={'553533323972'} 
+                    <Link href={'tel:553533323972'} 
                     target='_blank'
                     className="flex justify-center align-center items-center gap-2 hover:text-zinc-800 transition ease-in-out duration-300"
                     >
@@ -19,7 +19,7 @@ export default function Nav1() {
                     </Link>
                 </l1>
                 <l1 className='flex justify-center align-center items-center'>
-                    <Link href={'553533323972'} 
+                    <Link href={'https://wa.me/5535988950742'} 
                     target='_blank'
                     className='flex justify-center align-center items-center gap-2 hover:text-zinc-800 transition ease-in-out duration-300'
                     >
