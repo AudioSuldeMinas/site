@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import depoimentos from '../public/carrossel/1.jpg'
+import depoimentos from '../public/carrossel/1.jpeg'
 import Image from 'next/image';
 
 export default class NextJsCarouselDepoimentos extends Component {

@@ -18,10 +18,10 @@ export default function Formulario() {
 
     return (
         <div >
-            <div className="w-[305px] h-[380px] flex justify-center items-center right-32 top-48 absolute border-2 border-branco rounded-large text-sm">
+            <div className="w-[305px] h-[380px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
                 <form
                     onSubmit={sendEmail}
-                    className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large px-4 text-white "
+                    className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large  text-white "
                 >
                     <h2 className="text-2xl font-bold">
                         Ligamos para você!

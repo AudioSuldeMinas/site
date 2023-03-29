@@ -38,7 +38,7 @@ export default function Home() {
         <Inicio />
         <div className='flex flex-col lg:flex-row justify-around'>
           <div className='p-16 lg:w-1/2 flex flex-col '>
-            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold'>
+            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold pb-2'>
               Quem somos
             </h2>
             <p className='text-justify'>
@@ -47,7 +47,7 @@ export default function Home() {
             </p>
           </div>
           <div className="p-16 flex text-center md:text-start flex-col">
-            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold'>
+            <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold pb-2'>
               Colaboradores
             </h2>
             <div className='flex flex-col lg:flex-row gap-5 justify-center items-center text-center'>
