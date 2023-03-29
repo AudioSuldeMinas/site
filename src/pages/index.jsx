@@ -39,7 +39,7 @@ export default function Home() {
         </header>
         <Inicio />
         <div className='flex flex-col lg:flex-row justify-around'>
-          <div className='p-16 lg:w-1/2 flex flex-col '>
+          <div className='p-10 lg:pt-16 lg:pb-16 lg:pl-16 lg:p-0 lg:w-1/2 flex flex-col '>
             <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold pb-2'>
               Quem somos
             </h2>
@@ -82,10 +82,10 @@ export default function Home() {
           <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
             Serviços
           </h2>
-          <p className='pt-2'>
+          <p className='p-2 text-center'>
             Confira todos os serviços que executamos em nossa clínica.
             </p>
-          <div className='flex justify-center p-16 w-full gap-52'>
+          <div className='flex flex-col lg:flex-row justify-center p-16 w-full lg:gap-52'>
             <div>
               <h2 className='text-lg font-bold pb-5'>
                 O que fazemos?
