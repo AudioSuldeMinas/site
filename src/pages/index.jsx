@@ -5,6 +5,7 @@ import Ana from '../../public/Ana.jpeg'
 import Marina from '../../public/Marina.jpeg'
 import Priscila from '../../public/Priscila.jpeg'
 import Priscila2 from '../../public/Priscila2.jpeg'
+import image4 from '../../public/4.jpeg'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
 import CarrosselDepoimento from 'components/CarrosselDepoimento'
@@ -13,6 +14,7 @@ import Nav1 from 'components/Nav1'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import Modal from 'components/Modal'
 import Wpp from 'components/Wpp'
 
@@ -43,7 +45,7 @@ export default function Home() {
             </h2>
             <p className='text-justify'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia? Ex ea maxime assumenda sunt? Architecto, quam et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora neque maiores natus odit odio eos, dolorum sapiente laboriosam eius vel. Neque nihil fuga sunt obcaecati nulla illo explicabo, nemo possimus.lore
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia? Ex ea maxime assumenda sunt? Architecto, quam et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora neque maiores natus odit odio eos, dolorum sapiente laboriosam eius vel. Neque nihil fuga sunt obcaecati nulla illo explicabo, nemo possimus.lore
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia? Ex ea maxime assumenda sunt? Architecto, quam et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora neque maiores natus odit odio eos, dolorum sapiente laboriosam eius vel. Neque nihil fuga sunt obcaecati nulla illo explicabo, nemo possimus.lore
             </p>
           </div>
           <div className="p-16 flex text-center md:text-start flex-col">
@@ -75,21 +77,62 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex flex-col justify-center items-center md:flex-row bg-tema-site p-14">
+
+        <div className='flex flex-col justify-center items-center'>
+          <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
+            Serviços
+          </h2>
+          <p className='pt-2'>
+            Confira todos os serviços que executamos em nossa clínica.
+            </p>
+          <div className='flex justify-center p-16 w-full gap-52'>
             <div>
-              <Image src={Priscila2} alt="imagen de perfil de um médico"
-                className="w-44 border-double border-4 border-branco "
-              />
+              <h2 className='text-lg font-bold pb-5'>
+                O que fazemos?
+              </h2>
+              <ul className='text-tema-site'>
+                <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Seleção e adaptação de aparelhos auditivos
+                </li>
+                <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Orientação e acompanhamento pós adaptação
+                </li>
+                <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Assistência técnica de aparelhos auditivos em geral</li>
+                  <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Vendas de acessórios, como pilhas e umidificadores
+                </li>
+                <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Aparelhos e confecção de moldes em laboratório
+                </li>
+                <li className='flex gap-2 pb-2'>
+                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                className="text-tema-site"
+                />
+                  Acompanhamento no processo de adaptação
+                </li>
+              </ul>
             </div>
-            <div className=" md:pl-20 md:pr-20 flex flex-col justify-center items-center text-center md:w-[500px]">
-              <h2 className="text-white text-2xl">Priscila Carla Guimarães</h2>
-              <p className="text-white flex justify-center items-center text-center mt-5 text-sm" >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus maxime, reprehenderit impedit est aspernatur officiis quaerat porro nisi nihil quas consequuntur necessitatibus. Animi impedit ipsum cumque, commodi iure id.
-              </p>
-              <Modal nome={'Priscila Carla Guimarães'}
-                informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
+            <div className='rounded-3xl border-2 border-tema-site w-[266px] h-[270px] flex justify-center items-center'>
+              <Image src={image4}
+              className="w-64 h-[260px] border-double border-4 border-branco rounded-3xl"
               />
+              
             </div>
           </div>
         </div>
