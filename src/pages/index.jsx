@@ -1,28 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import patrocinador from '../../public/patrocinador.png'
 import Ana from '../../public/Ana.jpeg'
-import Marina from '../../public/Marina.jpeg'
-import Priscila from '../../public/Priscila.jpeg'
 import Priscila2 from '../../public/Priscila2.jpeg'
 import image4 from '../../public/4.jpeg'
 import { Inter } from '@next/font/google'
 import Inicio from 'components/ Inicio'
-import CarrosselDepoimento from 'components/CarrosselDepoimento'
 import Nav from 'components/Nav'
 import Nav1 from 'components/Nav1'
-import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
-import Modal from 'components/Modal'
-import Wpp from 'components/Wpp'
+import argosy from "../../public/patrocinador/argosy.jpeg"
+import oticon from "../../public/patrocinador/oticon.jpeg"
+import phonak from "../../public/patrocinador/phonak.jpeg"
+import rexton from "../../public/patrocinador/rexton.jpeg"
+import starkey from "../../public/patrocinador/starkey.jpeg"
+
+import { faArrowAltCircleRight,faTrademark } from '@fortawesome/free-solid-svg-icons'
+
+import Card from 'components/Card'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const data = new Date();
+  const ano = data.getFullYear();
   return (
     <>
       <Head>
@@ -82,9 +84,9 @@ export default function Home() {
           <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
             Serviços
           </h2>
-          <p className='p-2 text-center'>
+          <p className='p-2 text-center font-bold'>
             Confira todos os serviços que executamos em nossa clínica.
-            </p>
+          </p>
           <div className='flex flex-col lg:flex-row justify-center p-16 w-full lg:gap-52'>
             <div>
               <h2 className='text-lg font-bold pb-5'>
@@ -92,154 +94,138 @@ export default function Home() {
               </h2>
               <ul className='text-tema-site'>
                 <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Seleção e adaptação de aparelhos auditivos
                 </li>
                 <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Orientação e acompanhamento pós adaptação
                 </li>
                 <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Assistência técnica de aparelhos auditivos em geral</li>
-                  <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                <li className='flex gap-2 pb-2'>
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Vendas de acessórios, como pilhas e umidificadores
                 </li>
                 <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Aparelhos e confecção de moldes em laboratório
                 </li>
                 <li className='flex gap-2 pb-2'>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
-                className="text-tema-site"
-                />
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} width={15}
+                    className="text-tema-site"
+                  />
                   Acompanhamento no processo de adaptação
                 </li>
               </ul>
             </div>
             <div className='rounded-3xl border-2 border-tema-site w-[266px] h-[270px] flex justify-center items-center'>
               <Image src={image4}
-              className="w-64 h-[260px] border-double border-4 border-branco rounded-3xl"
+                className="w-64 h-[260px] border-double border-4 border-branco rounded-3xl"
               />
+
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col justify-center items-center '>
+          <div className='flex flex-col w-full justify-center items-center'>
+            <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
+              Produtos
+            </h2>
+            <p className='p-2 text-center font-bold'>
+              Temos os melhores produtos para auxiliar no seu tratamento
+            </p>
+          </div>
+          <div className='p-16 grid lg:grid-cols-4 justify-center items-center gap-5 w-[1000px]'>
+            <Card
+              title='CIC ou Micro Canal'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+
+            <Card
+              title='ITC ou Intra Canal'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Micro BTE ou BTE'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Open Fit'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Retroauricular'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Desumidificador'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Outro Produto'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+            <Card
+              title='Pilhas (ou baterias)'
+              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+            />
+          </div>
+
+        </div>
+        <div className='flex flex-col justify-center items-center pt-10 px-5'>
+          <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
+            Onde estamos
+          </h2>
+          <p className='p-2 text-center font-bold'>
+            Estamos localizados no Centro de São Lourencço - Minas Gereais.
+          </p>
+
+          <p className='pt-5 text-center'>
+            Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000.
+          </p>
+          <p className='text-center'><b>Atendimento: </b>de segunda a sexta das 09:00 às 18:00.</p>
+          <p className='text-center'><b>Telefones: </b> (35)3332-3972 - 98825-0742(WhatsApp).
+          </p>
+          <p className='text-center'><b>E-mail: </b>contato@audiosuldeminas.com.br</p>
+        </div>
+        <div className='w-screen flex flex-col  justify-center items-center pt-5'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen md:w-screen  h-96 border-double border-4 border-tema-site '>
+          </iframe>
+
+          <div className='flex flex-col justify-center items-center pt-10 px-5'>
+            <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
+              Parceiros
+            </h2>
+            <p className='p-2 text-center font-bold'>
+              As melhores marcas do mundo estão em nossa clinica
+            </p>
+            <div className='flex flex-wrap justify-center w-[800px] gap-9 p-16'>
+              <Image src={argosy} className='w-48 h-28' />
+              <Image src={oticon} className='w-48 h-28' />
+              <Image src={phonak} className='w-48 h-28' />
+              <Image src={rexton} className='w-48 h-28' />
+              <Image src={starkey} className='w-48 h-28' />
+            </div>
+
+            <footer className='bg-tema-site text-branco w-screen flex flex-col justify-center text-center p-5'>
+              <p>{ano},Áudio Sul de Minas - Todos os Direitos Reservados</p>
+              <p>Developed by Rixxer &trade;</p>
               
-            </div>
+            </footer>
           </div>
         </div>
-
-        <div className='w-sreen text-center flex flex-col pt-20'>
-          <div className=" mx-5 md:mx-20 b">
-            <h2 className='text-tema-site font-bold text-sm md:text-4xl'>Conheça nossa equipe</h2>
-            <p className="p-5 flex text-center text-sm md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ad doloremque id laborum distinctio quaerat quod, odio modi. Quo nemo dolore corporis sequi perspiciatis nobis accusamus totam tenetur error.</p>
-          </div>
-
-          <div className='flex flex-col md:flex-row justify-center items-center mt-20'>
-
-            <div className="flex flex-col md:flex-row justify-center items-center gap-20 pb-20 w-screen">
-
-              <div className="bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                <Image src={Priscila} alt="foto de perfil do médico"
-                  className="h-[350px] p-5"
-                />
-                <h2 className="text-tema-site text-2xl font-bold p-2">Priscila Carla Guimarães</h2>
-                <p className="text-sm">Fonoaudióloga Audiologista</p>
-                <Modal nome={'Priscila Carla Guimarães'}
-                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                />
-              </div>
-
-              <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                <Image src={Ana} alt="foto de perfil do médico"
-                  className="h-[350px] p-5"
-                />
-                <h2 className="text-tema-site text-2xl font-bold p-2">Ana Carolina Mazulka</h2>
-                <p className="text-sm">Fonoaudióloga Audiologista</p>
-                <Modal nome={'Ana Carolina Mazulka'}
-                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                />
-              </div>
-              <div className=" bg-branco flex flex-col justify-center items-center border-double border-4 border-tema-site w-80 h-[502px]">
-                <Image src={Marina} alt="foto de perfil do médico"
-                  className="h-[350px] p-5"
-                />
-                <h2 className="text-tema-site text-2xl font-bold p-2">Marina Motta Silva</h2>
-                <p className="text-sm">Fonoaudióloga Audiologista</p>
-                <Modal nome={'Marina Motta Silva'}
-                  informacoes={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cupiditate vel delectus omnis ratione explicabo magnam distinctio officia quis nisi repellendus ipsa, nihil reiciendis corporis porro molestias obcaecati aut pariatur?"}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className='w-screen md:w-full flex flex-col  justify-center items-center '>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen md:w-screen  h-96 border-double border-4 border-tema-site '>
-            </iframe>
-            <div className=' h-96 p-10'>
-              <p className='text-tema-site font-bold text-sm'>
-                Av. Antônio Junqueira de Souza, 524 - Centro, São Lourenço - MG, 37470-000
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div className="bg-tema-site">
-          <CarrosselDepoimento />
-        </div>
-        <div className="flex flex-col items-center justify-center gap-5 md:flex md:flex-row md:justify-center md:p-5 md:items-end w-screen h-44 md:gap-10">
-          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
-          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
-          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
-          <Image src={patrocinador} alt="logo patrocinador" className="w-14 md:w-44" />
-
-        </div>
-
-        <div className='w-full bg-tema-site flex justify-around items-center text-white'>
-          <div className="bg-tema-site flex justify-center items-center gap-10 p-5">
-            <Link href="https://instagram.com/audiosuldeminas?igshid=NTdlMDg3MTY=">
-              <FontAwesomeIcon icon={faInstagram} className="text-white w-8" />
-            </Link>
-            <Link href="/???">
-              <FontAwesomeIcon icon={faFacebook} className="text-white w-8" />
-            </Link>
-          </div>
-          <div>
-            <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <footer className='p-10 bg-black text-white w-full'>
-          <div className="flex">
-            <div className='w-1/2 mx-5'>
-              <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi itaque iste, repudiandae assumenda mollitia, nisi natus eius voluptates veritatis eaque modi aperiam magni saepe maiores nostrum inventore impedit cum!</p>
-            </div>
-            <div >
-              <ul>
-                <li className="flex flex-col mx-10">
-                  <h2 className='pb-5 text-sm"'>Quick Links</h2>
-                  <Link href="/?" className='text-sm'>Teste</Link>
-                  <Link href="/?" className='text-sm'>Teste</Link>
-                  <Link href="/?" className='text-sm'>Teste</Link>
-                  <Link href="/?" className='text-sm'>Teste</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className='flex justify-between mx-5 py-10 mt-10  border-b border-solid border-branco  border-t '>
-            <p className="text-sm">teste</p>
-            <p className="text-sm">99999999999</p>
-          </div>
-        </footer>
-        <Wpp />
       </div>
     </>
   )
