@@ -69,27 +69,27 @@ export default function Nav() {
                         <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Início</p></Link>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
-                        <Link href="/sobre " className=""
+                        <a href="/#quemsomos"
                         >
                             <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">
                             Quem somos
                             </p>
-                        </Link>
+                        </a>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
-                        <Link href="/cidade"className= "">
+                        <a href="/#servicos"className= "">
                         <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Serviços</p>
-                        </Link>
+                        </a>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
-                        <Link href="/imoveis" className="">
+                        <a href="/#produtos" className="">
                         <p  className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Produtos</p>
-                        </Link>
+                        </a>
                     </li>
                     <li className="w-28 flex justify-center items-center text-center">
-                        <Link href="/contato" className= "">
+                        <a href="/#contato" className= "">
                         <p className="text-tema-site  text-sm hover:border hover:border-b-second-tema-site transition ease-in-out duration-300">Contato</p>
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </nav>

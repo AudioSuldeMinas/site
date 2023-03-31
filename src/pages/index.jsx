@@ -40,7 +40,7 @@ export default function Home() {
           <Nav />
         </header>
         <Inicio />
-        <div className='bg-slate-200 flex flex-col lg:flex-row justify-around'>
+        <div id ='quemsomos' className='bg-slate-200 flex flex-col lg:flex-row justify-around'>
           <div className='p-10 lg:pt-16 lg:pb-16 lg:pl-16 lg:p-0 lg:w-1/2 flex flex-col '>
             <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold pb-2'>
               Quem somos
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='pt-10 flex flex-col justify-center items-center'>
+        <div id ='servicos'className='pt-10 flex flex-col justify-center items-center'>
           <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
             Serviços
           </h2>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-slate-200 pt-10 flex flex-col justify-center items-center '>
+        <div id ='produtos' className='bg-slate-200 pt-10 flex flex-col justify-center items-center '>
           <div className='flex flex-col w-full justify-center items-center'>
             <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
               Produtos
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className='flex flex-col justify-center items-center pt-10 px-5'>
+        <div id ='contato' className='flex flex-col justify-center items-center pt-10 px-5'>
           <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
             Onde estamos
           </h2>
