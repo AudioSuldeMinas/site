@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Nav1() {
     return (
         <div className="bg-tema-site p-2 flex justify-around text-sm font-bold">
-            <ul className=" flex justify-center  text-branco gap-10">
+            <ul className=" hidden lg:flex justify-center  text-branco gap-10">
                 <l1 className='flex justify-center align-center items-center'>
                     <Link href={'tel:553533323972'} 
                     target='_blank'
@@ -37,7 +37,7 @@ export default function Nav1() {
                 </l1>
             </ul>
 
-            <button className=" flex justify-center items-center text-tema-site bg-branco rounded-2xl p-1 px-5 hover:bg-zinc-800 hover:text-branco transition ease-in-out duration-300" >
+            <button className="flex justify-center items-center text-tema-site bg-branco rounded-2xl p-1 px-5 hover:bg-zinc-800 hover:text-branco transition ease-in-out duration-300" >
                 Agende sua avaliação!
             </button>
 

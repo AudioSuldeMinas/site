@@ -1,6 +1,6 @@
 export default function Card({ title, content }) {
     return (
-        <div className="w-52 rounded-3xl flex flex-col justify-center items-center">
+        <div className="w-52 border border-tema-site rounded-3xl flex flex-col justify-center items-center">
 
             <div className="bg-tema-site rounded-t-3xl w-full text-center p-2 text-branco font-bold">
                 {title}

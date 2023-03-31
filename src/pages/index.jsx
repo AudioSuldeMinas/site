@@ -40,7 +40,7 @@ export default function Home() {
           <Nav />
         </header>
         <Inicio />
-        <div className='flex flex-col lg:flex-row justify-around'>
+        <div className='bg-slate-200 flex flex-col lg:flex-row justify-around'>
           <div className='p-10 lg:pt-16 lg:pb-16 lg:pl-16 lg:p-0 lg:w-1/2 flex flex-col '>
             <h2 className='border-b border-tema-site w-full mb-5 text-tema-site text-xl font-bold pb-2'>
               Quem somos
@@ -87,7 +87,7 @@ export default function Home() {
           <p className='p-2 text-center font-bold'>
             Confira todos os serviços que executamos em nossa clínica.
           </p>
-          <div className='flex flex-col lg:flex-row justify-center p-16 w-full lg:gap-52'>
+          <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start p-16 w-full lg:gap-52'>
             <div>
               <h2 className='text-lg font-bold pb-5'>
                 O que fazemos?
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center '>
+        <div className='bg-slate-200 flex flex-col justify-center items-center '>
           <div className='flex flex-col w-full justify-center items-center'>
             <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
               Produtos
@@ -147,7 +147,7 @@ export default function Home() {
               Temos os melhores produtos para auxiliar no seu tratamento
             </p>
           </div>
-          <div className='p-16 grid lg:grid-cols-4 justify-center items-center gap-5 w-[1000px]'>
+          <div className='p-16 grid lg:grid-cols-4 justify-center items-center gap-5 lg:w-[1000px]'>
             <Card
               title='CIC ou Micro Canal'
               content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
@@ -204,14 +204,14 @@ export default function Home() {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.1291334886274!2d-45.05481063750276!3d-22.117748345847446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b93690fc911%3A0xa55df95897731891!2sAv.%20Ant%C3%B4nio%20Junqueira%20de%20Souza%2C%20524%20-%20Centro%2C%20S%C3%A3o%20Louren%C3%A7o%20-%20MG%2C%2037470-000!5e0!3m2!1spt-BR!2sbr!4v1674233234286!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-screen md:w-screen  h-96 border-double border-4 border-tema-site '>
           </iframe>
 
-          <div className='flex flex-col justify-center items-center pt-10 px-5'>
+          <div className='bg-slate-200 flex flex-col justify-center items-center pt-10 px-5 w-screen'>
             <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
               Parceiros
             </h2>
             <p className='p-2 text-center font-bold'>
               As melhores marcas do mundo estão em nossa clinica
             </p>
-            <div className='flex flex-wrap justify-center w-[800px] gap-9 p-16'>
+            <div className='flex  lg:flex flex-wrap justify-center lg:w-[800px] gap-9 p-16'>
               <Image src={argosy} className='w-48 h-28' />
               <Image src={oticon} className='w-48 h-28' />
               <Image src={phonak} className='w-48 h-28' />
