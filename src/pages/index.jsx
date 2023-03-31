@@ -17,6 +17,8 @@ import starkey from "../../public/patrocinador/starkey.jpeg"
 import { faArrowAltCircleRight,faTrademark } from '@fortawesome/free-solid-svg-icons'
 
 import Card from 'components/Card'
+import BotaoVolta from 'components/BotaoVolta'
+import Wpp from 'components/Wpp'
 
 
 
@@ -34,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <div id='inicio'>
         <header>
           <Nav1 />
           <Nav />
@@ -227,6 +229,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <BotaoVolta/>
+      <Wpp/>
     </>
   )
 }
