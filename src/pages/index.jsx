@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col justify-center items-center'>
+        <div className='pt-10 flex flex-col justify-center items-center'>
           <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
             Serviços
           </h2>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-slate-200 flex flex-col justify-center items-center '>
+        <div className='bg-slate-200 pt-10 flex flex-col justify-center items-center '>
           <div className='flex flex-col w-full justify-center items-center'>
             <h2 className='text-tema-site text-2xl border-b border-tema-site text-center font-bold pb-2'>
               Produtos
@@ -150,36 +150,36 @@ export default function Home() {
           <div className='p-16 grid lg:grid-cols-4 justify-center items-center gap-5 lg:w-[1000px]'>
             <Card
               title='CIC ou Micro Canal'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,' 
             />
 
             <Card
               title='ITC ou Intra Canal'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Micro BTE ou BTE'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Open Fit'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Retroauricular'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Desumidificador'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Outro Produto'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
             <Card
               title='Pilhas (ou baterias)'
-              content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum numquam officiis nihil, quia repellendus illum qui, labore modi natus ratione officia?'
+              content='Lorem ipsum dolor sit amet consectetur,'
             />
           </div>
 

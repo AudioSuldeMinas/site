@@ -17,7 +17,7 @@ export default function Formulario() {
     }
 
     return (
-        <div className="w-screen flex justify-center">
+        <div className="w-screen flex justify-center pt-5">
             <div className="w-[305px] h-[380px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
                 <form
                     onSubmit={sendEmail}

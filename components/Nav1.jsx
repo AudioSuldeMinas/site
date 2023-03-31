@@ -15,7 +15,7 @@ export default function Nav1() {
                     >
                         <FontAwesomeIcon icon={faPhone}
                             className="text-white w-5 bg-zinc-800 rounded-full p-1 " />
-                        (35) 3332-3332
+                        (35) 3332-3972
                     </Link>
                 </l1>
                 <l1 className='flex justify-center align-center items-center'>

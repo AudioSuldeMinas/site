@@ -5,7 +5,7 @@ export default function Inicio() {
     return (
         <div>
             <div className="flex pt-10 md:flex-row md:mt-0 items-center h-[650px] bg-bgMobile bg-no-repeat bg-cover md:bg-none md:h-[500px] md:pt-0">            
-                <div className="mt-5 z-10">
+                <div className=" -mt-44 z-10">
                     <Formulario/>
                 </div>
                 <div className="absolute mt-[40px] hidden md:block ">
