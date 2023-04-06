@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import ReCAPTCHA from "react-google-recaptcha";
+import React, { useRef } from 'react';
 
 export default function Formulario() {
     const [name, setName] = useState('')
@@ -7,9 +8,13 @@ export default function Formulario() {
     const [tel, setTel] = useState('')
     const [submitted, setSubmitted] = useState(false)
 
+    const recaptchaRef = React.createRef();
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        recaptchaRef.current.execute();
+
         let data = {
             name,
             email,
@@ -48,9 +53,16 @@ export default function Formulario() {
             }
         })
     }
+    const onReCAPTCHAChange = (captchaCode) => {
+        if (!captchaCode) {
+            return;
+        }
+        alert(deu)
+        recaptchaRef.current.reset();
+    }
     return (
         <div className="w-screen flex justify-center pt-5">
-            <div className="w-[305px] h-[380px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
+            <div className="w-[305px] h-[400px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
                 <form
                     className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large  text-white "
                 >
@@ -83,7 +95,7 @@ export default function Formulario() {
                         Telefone
                     </label>
                     <input
-                    type='tel' name='tel'
+                        type='tel' name='tel'
                         value={tel}
                         onChange={(e) => { setTel(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
@@ -91,6 +103,14 @@ export default function Formulario() {
                     < input type='submit' onClick={(e) => { handleSubmit(e) }}
                         value="Enviar"
                         className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer hover:text-branco hover:bg-zinc-800 transition ease-in-out duration-300 font-bold "
+                    />
+
+                    <ReCAPTCHA
+                        size="invisible"
+                        sitekey="6LegkWYlAAAAAENFxY2xdi4OjR8hyP4KgJii3Yol"
+                        ref={recaptchaRef}
+                        onChange={onReCAPTCHAChange}
+                        className="pt-5"
                     />
                 </form>
             </div>
