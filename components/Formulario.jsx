@@ -25,6 +25,7 @@ export default function Formulario() {
         }
         if (tel.length < 10) {
             window.alert("O número de telefone deve conter o DDD + 8 digitos para telefone fixo ou DDD + 9 digitos para celular")
+            return;
         }
 
 
