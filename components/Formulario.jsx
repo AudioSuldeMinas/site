@@ -4,18 +4,30 @@ import { useState } from "react"
 export default function Formulario() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [tel, setTel] = useState('')
     const [submitted, setSubmitted] = useState(false)
 
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Sending')
         let data = {
             name,
             email,
-            message
+            tel
         }
+        if (!name.trim() || !email.trim() || !tel.trim()) {
+            window.alert("Preencha todos os campos")
+            return;
+        }
+        if (name.length < 3) {
+            window.alert('O nome deve conter 3 letras ou mais')
+            return;
+        }
+        if (tel.length < 10) {
+            window.alert("O número de telefone deve conter o DDD + 8 digitos para telefone fixo ou DDD + 9 digitos para celular")
+        }
+
+
         fetch('/api/contact', {
             method: 'POST',
             headers: {
@@ -30,7 +42,8 @@ export default function Formulario() {
                 setSubmitted(true)
                 setName('')
                 setEmail('')
-                setBody('')
+                setTel('')
+                alert('Contato Salvo!')
             }
         })
     }
@@ -52,7 +65,7 @@ export default function Formulario() {
                     <label className="mt-2 text-sm p-1">
                         Nome:
                     </label>
-                    <input type="text" name="name"
+                    <input type="text" name="name" value={name}
                         onChange={(e) => { setName(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
                     />
@@ -60,7 +73,8 @@ export default function Formulario() {
                     <label className="text-sm p-1">
                         E-mail:
                     </label>
-                    <input type="text" name="name"
+                    <input type="text" name="name" value={email}
+
                         onChange={(e) => { setEmail(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
                     />
@@ -68,18 +82,17 @@ export default function Formulario() {
                         Telefone
                     </label>
                     <input
-                        onChange={(e) => { setMessage(e.target.value) }}
+                    type='tel' name='tel'
+                        value={tel}
+                        onChange={(e) => { setTel(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
                     />
-                    < input type='submit' onClick={(e) => {
-                        handleSubmit(e)
-                    }}
+                    < input type='submit' onClick={(e) => { handleSubmit(e) }}
                         value="Enviar"
-                        className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer hover:text-branco hover:bg-zinc-800 transition ease-in-out duration-300"
+                        className="p-1 mt-6 rounded-3xl px-4 bg-branco text-tema-site text-sm w-48 cursor-pointer hover:text-branco hover:bg-zinc-800 transition ease-in-out duration-300 font-bold "
                     />
                 </form>
             </div>
         </div>
-
     )
 }
