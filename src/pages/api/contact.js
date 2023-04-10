@@ -8,8 +8,8 @@ export default function (req, res) {
     replyTo: req.body.email,
     auth:
     {
-      user: 'audiosuldeminasmg@gmail.com',
-      pass: 'thebpzrtscuaytmt',
+      user: process.env.usermail,
+      pass: process.env.password,
     },
     secure: true,
   })
