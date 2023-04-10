@@ -17,9 +17,9 @@ export default function (req, res) {
     from: 'audiosuldeminasmg@gmail.com',
     to: 'audiosuldeminasmg@gmail.com',
     subject: `Menssagem de contato de ${req.body.name}`,
-    text: "Telefone:" + req.body.message + " |Enviado por: " + req.body.email,
+    text: "Telefone:" + req.body.tel+ " |Enviado por: " + req.body.email,
     html: `<div>
-      <p><b>Telefone: </b>${req.body.message}</p>
+      <p><b>Telefone: </b>${req.body.tel}</p>
       </div><p><b>Enviado por: </b>${req.body.email}</p>`
   }
   transporter.sendMail(mailData, function (err, info) {

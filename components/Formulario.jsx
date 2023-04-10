@@ -8,12 +8,10 @@ export default function Formulario() {
     const [tel, setTel] = useState('')
     const [submitted, setSubmitted] = useState(false)
 
-    const recaptchaRef = React.createRef();
-
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        recaptchaRef.current.execute();
+        
 
         let data = {
             name,
@@ -32,7 +30,6 @@ export default function Formulario() {
             window.alert("O número de telefone deve conter o DDD + 8 digitos para telefone fixo ou DDD + 9 digitos para celular")
             return;
         }
-
 
         fetch('/api/contact', {
             method: 'POST',
@@ -53,18 +50,11 @@ export default function Formulario() {
             }
         })
     }
-    const onReCAPTCHAChange = (captchaCode) => {
-        if (!captchaCode) {
-            return;
-        }
-        alert(deu)
-        recaptchaRef.current.reset();
-    }
     return (
         <div className="w-screen flex justify-center pt-5">
             <div className="w-[305px] h-[400px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
                 <form
-                    className="flex flex-col justify-center items-center p-8 w-72 h-92 bg-tema-site rounded-large  text-white "
+                    className="flex flex-col justify-center items-center p-8 w-72 h-96 bg-tema-site rounded-large  text-white "
                 >
                     <h2 className="text-2xl font-bold">
                         Ligamos para você!
@@ -86,7 +76,7 @@ export default function Formulario() {
                     <label className="text-sm p-1">
                         E-mail:
                     </label>
-                    <input type="text" name="name" value={email}
+                    <input type="text" name="email" value={email}
 
                         onChange={(e) => { setEmail(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
@@ -95,7 +85,7 @@ export default function Formulario() {
                         Telefone
                     </label>
                     <input
-                        type='tel' name='tel'
+                        type='text' name='tel'
                         value={tel}
                         onChange={(e) => { setTel(e.target.value) }}
                         className="rounded-3xl w-48 p-1 px-2 text-sm text-black"
@@ -108,9 +98,6 @@ export default function Formulario() {
                     <ReCAPTCHA
                         size="invisible"
                         sitekey="6LegkWYlAAAAAENFxY2xdi4OjR8hyP4KgJii3Yol"
-                        ref={recaptchaRef}
-                        onChange={onReCAPTCHAChange}
-                        className="pt-5"
                     />
                 </form>
             </div>
