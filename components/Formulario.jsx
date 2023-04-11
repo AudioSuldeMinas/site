@@ -8,10 +8,12 @@ export default function Formulario() {
     const [tel, setTel] = useState('')
     const [submitted, setSubmitted] = useState(false)
 
+    const recaptchaRef = React.createRef();
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        
+        recaptchaRef.current.execute();
 
         let data = {
             name,
@@ -50,6 +52,21 @@ export default function Formulario() {
             }
         })
     }
+
+    const onReCAPTCHAChange = (captchaCode) => {
+        // If the reCAPTCHA code is null or undefined indicating that
+        // the reCAPTCHA was expired then return early
+        if(!captchaCode) {
+          return;
+        }
+        // Else reCAPTCHA was executed successfully so proceed with the 
+        // alert
+        alert(`Hey, ${email}`);
+        // Reset the reCAPTCHA so that it can be executed again if user 
+        // submits another email.
+        recaptchaRef.current.reset();
+      }
+
     return (
         <div className="w-screen flex justify-center pt-5">
             <div className="w-[305px] h-[400px] flex justify-center items-center md:right-32 md:top-48 md:absolute border-2 border-branco rounded-large text-sm">
@@ -96,8 +113,10 @@ export default function Formulario() {
                     />
 
                     <ReCAPTCHA
+                        ref={recaptchaRef}
                         size="invisible"
-                        sitekey="6LegkWYlAAAAAENFxY2xdi4OjR8hyP4KgJii3Yol"
+                        sitekey='6LegkWYlAAAAAENFxY2xdi4OjR8hyP4KgJii3Yol'
+                        onChange={onReCAPTCHAChange}
                     />
                 </form>
             </div>
